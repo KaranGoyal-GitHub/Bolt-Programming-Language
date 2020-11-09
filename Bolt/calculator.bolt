@@ -1,0 +1,24 @@
+FUN add(x, y)
+	PRINT(x+y)
+END
+FUN subtract(x, y)
+	PRINT(x-y)
+END
+FUN multiply (x, y)
+	PRINT(x*y)
+END
+FUN divide(x, y)
+	PRINT(x/y)
+END
+FUN power(x, y)
+	PRINT(x^y)
+END
+VAR num1 = INPUT_INT()
+VAR num2 = INPUT_INT()
+PRINT("Choose an operation: add(1), subtract(2), multiply(3), divide(4), power(5)")
+VAR choice = INPUT_INT()
+IF choice == 1 THEN add(num1, num2)
+IF choice == 2 THEN subtract(num1, num2)
+IF choice == 3 THEN multiply(num1, num2)
+IF choice == 4 THEN divide(num1, num2)
+IF choice == 5 THEN power(num1, num2)
